@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Haskell</title>
+  </head>
+  
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron">
+	<img src="img/haskell-logo.svg"> 
+	<p>An advanced, purely functional programming language</p> 
+      </div>
+    </div>
+    <div class="container-fluid">
+      <h2>What is it?</h2>
+    </div>
+    <div class="container-fluid">
+      <h2>Features</h2>
+      <ul class="nav nav-tabs">
+	<li class="active"><a data-toggle="pill" href="#menu1">Statically Typed</a></li>
+	<li><a data-toggle="tab" href="#menu2">Purely Functional</a></li>
+	<li><a data-toggle="tab" href="#menu3">Lazy</a></li>
+	<li><a data-toggle="tab" href="#menu4">Packages</a></li>
+	<li><a data-toggle="tab" href="#menu5">Lambda Expressions</a></li>
+      </ul>
+      <div class="tab-content">
+	<div id="menu1" class="tab-pane fade in active">
+	  <h3>Statically Typed</h3>
+	  <table>
+	    <tr>
+	      <td style="width: 500px;">
+		<ul>
+		  <li>Type determined at compile time, cannot be changed </li>
+		  <li>Declaring type is actually optional </li>
+		  <li>Other statically typed languages:  Java, C++, Russ </li>
+		  <li>Python and Ruby are dynamically typed → type interpreted at runtime </li>
+		  <li>Generally slower runtime </li>
+		  <li>Avoids run-time errors, will be caught at compile-time </li>
+		</ul>
+	      </td>
+	      <td>
+		<img src="img/img1.png" class="center">
+		<img src="img/img2.png" class="center">
+	      </td>
+	    </tr>
+	  </table>
+	</div>
+	<div id="menu2" class="tab-pane fade">
+	  <h3>Purely Functional</h3>
+	  <table>
+	    <tr>
+	      <td style="width: 1000px;">
+		<p>Purely Functional vs. Imperative Languages </p>
+		<ul>
+		  <li>Imperative - computer is given a sequence of tasks; you can set a variable <kbd>a</kbd> to 5 and then set it to something else. </li>
+		  <li>Purely Functional - you tell the computer what stuff is, defining functions, not what to do. If you set <kbd>a</kbd> to 5 you CANNOT set it to something else later. </li>
+		</ul>
+		<p>Functions are First-Class</p>
+		<ul>
+		  <li>Functions can be passed in as arguments to other functions, returned from functions, assigned from variables, and held in data structures, such as lists. </li>
+		</ul>
+		<p>Referential Transparency</p>
+		<ul>
+		  <li>A function has no side effects.</li>
+		  <li>Function is called twice with the same parameters, it's guaranteed to return the same result.</li>
+		  <li>Ex ) <kbd>foo(x) + foo(x) = 2 * foo(x)</kbd></li>
+		</ul>
+	      </td>
+	      <td>
+		<img src="img/img3.png" class="center" width="400px" height="200px">
+	      </td>
+	    </tr>
+	  </table>
+	</div>
+	<div id="menu3" class="tab-pane fade">
+	  <h3>Lazy</h3>
+	  <table>
+	    <tr>
+	      <td>
+		<ul>
+		  <li>Expressions will not be evaluated until their value is needed</li>
+		  <li>Boolean short circuiting comes for free with this!</li>
+		  <li>Improves runtime</li>
+		  <li>Call by name evaluation: A functions arguments are not evaluated. Rather, they are substituted into the function itself. </li>
+		  <li>Example: Making an infinite list of natural numbers, and then selecting only the 10th element. Haskell will not commit to memory all of the other elements until it needs to.</li>
+		  <li>Sharing: Pointers to an object will not create copies of that object </li>
+		</ul>
+	      </td>
+	      <td>
+		<img src="img/img4.png" width="70%" height="70%">
+	      </td>
+	    </tr>
+	  </table>
+	</div>
+	<div id="menu4" class="tab-pane fade">
+	  <h3>Packages</h3>
+	  <table>
+	    <tr>
+	      <td>
+		<img src="img/img6.png" style="center">
+	      </td>
+	      <td>
+		<img src="img/img5.png" style="center">
+	      </td>
+	    </tr>
+	  </table>
+	</div>
+	<div id="menu5" class="tab-pane fade">
+	  <h3>Lambda Expressions</h3>
+	  <p>Creating functions without giving them explicit names → Anonymous functions</p>
+	  <table>
+	    <tr>
+	      <td>
+		<img src="img/img7.png" style="center">
+	      </td>
+	      <td>
+		<img src="img/img8.png" style="center">
+	      </td>
+	    </tr>
+	  </table>
+	  <table>
+	    <tr>
+	      <td>
+		<h4><mark>Without lambda expression:</mark></h4>
+		<img src="img/img9.png" style="center">
+	      </td>
+	      <td>
+		<h4><mark>With lambda expression:</mark></h4>
+		<img src="img/img10.png" style="center">
+	      </td>
+	    </tr>
+	    </table>
+	</div>
+      </div>
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
