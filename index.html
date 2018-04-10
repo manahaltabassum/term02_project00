@@ -20,21 +20,113 @@
       </div>
     </div>
     
-	<div class="container-fluid">
+    <div class="container-fluid">
       <h2>What is it?</h2>
-		<ul>
-			<li>Functional programming language introduced in 1990</li>
-			<li>Named after Haskell Curry, an American mathematician known for his contributions to the field of logic</li>
-			<li>Latest standard is Haskell 2010</li>
-			<li>
-				Used in academia and industries
-				<ul>
-					<li>Used by companies like Facebook, Google to build internal tools used for software development</li>
-				</ul>
-			</li>
-		</ul>
+      <ul>
+	<li>Functional programming language introduced in 1990</li>
+	<li>Named after Haskell Curry, an American mathematician known for his contributions to the field of logic</li>
+	<li>Latest standard is Haskell 2010</li>
+	<li>
+	  Used in academia and industries
+	  <ul>
+	    <li>Used by companies like Facebook, Google to build internal tools used for software development</li>
+	  </ul>
+	</li>
+      </ul>
     </div>
+
+
+
+
     <div class="container-fluid" style="background-color:#f2f2f2;" >
+      <h2>Syntax </h2>
+      <ul class="nav nav-tabs">
+	<li class="active"><a data-toggle="pill" href="#menuA">Basic Types</a></li>
+	<li><a data-toggle="tab" href="#menuB">Basic Functions</a></li>
+	<li><a data-toggle="tab" href="#menuC">Types and Typeclasses</a></li>
+	<li><a data-toggle="tab" href="#menuD">Type Inference</a></li>
+	<li><a data-toggle="tab" href="#menuE">List Operations</a></li>
+	<li><a data-toggle="tab" href="#menuF">Basic Functions</a></li>
+      </ul>
+      <div class="tab-content">
+	<div id="menuA" class="tab-pane fade in active">
+	  <h3>Basic Types</h3>
+	  <img src="img/img14.png" class="center">
+	</div>
+	<div id="menuB" class="tab-pane fade">
+	  <h3>Basic Functions</h3>
+	  <img src="img/img15.png" class="center">
+	</div>
+	<div id="menuC" class="tab-pane fade">
+	  <h3>Types and Typeclasses</h3>
+	  <table>
+	    <tr>
+	      <td>
+		<ul>
+		  <li><code>::</code> is read as "has type of." You'll see it in functions.</li>
+		  <p> <img src="img/img16.png" class="center"> </p>
+		  <li>Functions also have types. When writing our own functions, we can choose to give them an explicit type declaration.</li>
+		  <p> <img src="img/img17.png" class="center"> </p>
+		  <li>A Typeclass is a sort of interface that defines some behavior. If a type is part of a typeclass, that means that it supports and implements the behavior the typeclass describes </li>
+		  <p> <img src="img/img18.png" class="center"> </p>
+		  <li>NOTE: the equality operator <code>==</code> is a function. So are <code>+</code>, <code>*</code>, <code>-</code>, <code>/</code> . If a fxn has only special characters, it’s considered an infix fxn by default  </li>
+		  
+		</ul>
+	      </td>
+	  </table>
+	</div>
+	<div id="menuD" class="tab-pane fade">
+	  <h3>Type Inference</h3>
+	  <table>
+	    <tr>
+	      <td>
+		<ul>
+		  <li>You do not need to explicitly write out type in a Haskell program</li>
+		  <li>You can write out types if you choose</li>
+		  <p> <img src="img/img19.png" class="center"> </p>
+		  <p> <img src="img/img20.png" class="center"> </p>
+		  <p> <img src="img/img21.png" class="center"> </p>
+		</ul>
+	      </td>
+	    </tr>
+	    
+
+	  </table>
+	</div>
+	<div id="menuE" class="tab-pane fade">
+	  <h3>List Operations</h3>
+	  <ul>
+	    <li> Strings are lists of characters! (Don’t forget it) </li>
+
+	    <p> <img src="img/img22.png" class="center"> </p>
+	    <p> <img src="img/img23.png" class="center"> </p>
+	    <p> <img src="img/img24.png" class="center"> </p>
+	</div>
+	<div id="menuF" class="tab-pane fade">
+	  <h3>Basic Functions</h3>
+	  <p> <img src="img/img25.png" class="center"> </p>
+	  <p> <img src="img/img26.png" class="center"> </p>
+	</div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="container-fluid">
       <h2>Features</h2>
       <ul class="nav nav-tabs">
 	<li class="active"><a data-toggle="pill" href="#menu1">Statically Typed</a></li>
@@ -149,39 +241,39 @@
 		<img src="img/img10.png" style="center">
 	      </td>
 	    </tr>
-	    </table>
+	  </table>
 	</div>
       </div>
     </div>
     
-	<div class="container-fluid">
-		<h2>Advantages </h2>
-		<ul>
-			<li>Short, concise</li>
-			<li>Easy to reason about the program’s behavior due to referential transparency</li>
-			<li>Lambda expressions</li>
-			<li>Lazy Evaluation → infinite data structures</li>
-			<li>Type Inference</li>
-			<li>Clear, intuitive syntax</li>
-			<li>Fast runtime performance</li>
-			<li>Glasgow Haskell Compiler (GHC) provides interpreter so scripts can be run without compiling</li>
-		</ul>
-		<img src = "img/img11.png" class = "center-block"> 
-		<br><br>
+    <div class="container-fluid" style="background-color:#f2f2f2;" >
+      <h2>Advantages </h2>
+      <ul>
+	<li>Short, concise</li>
+	<li>Easy to reason about the program’s behavior due to referential transparency</li>
+	<li>Lambda expressions</li>
+	<li>Lazy Evaluation → infinite data structures</li>
+	<li>Type Inference</li>
+	<li>Clear, intuitive syntax</li>
+	<li>Fast runtime performance</li>
+	<li>Glasgow Haskell Compiler (GHC) provides interpreter so scripts can be run without compiling</li>
+      </ul>
+      <img src = "img/img11.png" class = "center-block"> 
+      <br><br>
 
-	</div>
-	
-	<div class="container-fluid" style="background-color:#f2f2f2;" >
-		<h2>Criticisms</h2>
-		<ul>
-			<li> Cryptic error messages for beginners</li>
-			<li>Lazy evaluation: memory usage hard to predict</li>
-		</ul>
-		<div class = "center-block">
-			<img src="img/img12.png" style="pull-right">
-			<img src="img/img13.png">
-		</div>
-	</div>
+    </div>
+    
+    <div class="container-fluid" >
+      <h2>Criticisms</h2>
+      <ul>
+	<li> Cryptic error messages for beginners</li>
+	<li>Lazy evaluation: memory usage hard to predict</li>
+      </ul>
+      <div class = "center-block">
+	<img src="img/img12.png" style="pull-right">
+	<img src="img/img13.png">
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
