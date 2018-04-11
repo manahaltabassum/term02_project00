@@ -16,9 +16,13 @@
     <div class="container-fluid">
       <div class="jumbotron">
 	<img src="img/haskell-logo.svg"> 
-	<p>An advanced, purely functional programming language</p> 
+	<p>An advanced, purely functional programming language</p>
       </div>
     </div>
+
+    <div class="container-fluid">
+      <p>Team: emilylawton Members: Sasha F., Clive J., Manahal T.</p>
+      </div>
     
     <div class="container-fluid">
       <h2>What is it?</h2>
@@ -151,8 +155,15 @@
 		</ul>
 	      </td>
 	      <td>
-		<img src="img/img1.png" class="center">
-		<img src="img/img2.png" class="center">
+		<blockquote>
+		  <code>
+		    char = 'a' :: Char <br>
+		    int = 123 :: Int <br>
+		    fun = isDigit :: Char -> Bool <br>
+		    <br>
+		    isDigit 1
+		  </code>
+		  </blockquote>
 	      </td>
 	    </tr>
 	  </table>
@@ -199,7 +210,17 @@
 		</ul>
 	      </td>
 	      <td>
-		<img src="img/img4.png" width="70%" height="70%">
+		<blockquote>
+		  <code>
+		    f :: Int -> Int -> Int <br>
+		    f x y = case x > 0 of <br>
+		    &emsp; True -> x - 1 <br>
+		    &emsp; False -> x + 1 <br>
+		    <br>
+		    main = print $ f 1 (product[1...])
+		  </code>
+		</blockquote>
+		<p> In this case, the infinite series product will not be evaluated at all so it will not result in an error when running the bottom line. </p>
 	      </td>
 	    </tr>
 	  </table>
@@ -223,10 +244,22 @@
 	  <table>
 	    <tr>
 	      <td>
-		<img src="img/img7.png" style="center">
+		<blockquote>
+		  <code>
+		    Prompt > (\x -> x + 1) 4 <br>
+		    5 :: Integer <br>
+		  </code>
+		</blockquote>
+		<p align="center">This lambda function adds one <br> to a given integer.</p>
 	      </td>
 	      <td>
-		<img src="img/img8.png" style="center">
+		<blockquote>
+		  <code>
+		    Prompt > (\x y -> x + y) 3 5 <br>
+		    8 :: Integer <br>
+		  </code>
+		</blockquote>
+		<p align="center">This lambda function add two <br> given integers together.</p>
 	      </td>
 	    </tr>
 	  </table>
@@ -234,11 +267,22 @@
 	    <tr>
 	      <td>
 		<h4><mark>Without lambda expression:</mark></h4>
-		<img src="img/img9.png" style="center">
+		<blockquote>
+		  <code>
+		    addOneList lst = map addOne' lst <br>
+		    &emsp; where addOne' x = x + 1
+		  </code>
+		</blockquote>
+		<p align = "center">addOne is a function which takes a list of<br> numbers and adds 1 to each number.</p> 
 	      </td>
 	      <td>
 		<h4><mark>With lambda expression:</mark></h4>
-		<img src="img/img10.png" style="center">
+		<blockquote>
+		  <code>
+		    addOneList lst = map (\x -> x + 1)
+		  </code>
+		</blockquote>
+		<p align = "center">The usage of a lambda expression cuts down<br> the amount of code you need to write for addOneList.</p>
 	      </td>
 	    </tr>
 	  </table>
